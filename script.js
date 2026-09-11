@@ -201,3 +201,22 @@ musicBtn.addEventListener('click', () => {
     }
     
 });
+
+const cartaBtn = document.getElementById('cartaBtn');
+const cartaContainer = document.getElementById('cartaContainer');
+const canvasElement = document.getElementById('c');
+
+let cartaAbierta = false;
+
+cartaBtn.addEventListener('click', () => {
+    cartaAbierta = !cartaAbierta;
+    if(cartaAbierta){
+        canvasElement.classList.add('shift-up');
+        cartaContainer.classList.add('show');
+        cartaBtn.innerText = '✨ Cerrar Carta';
+    }else{
+        canvasElement.classList.remove('shift-up');
+        cartaContainer.classList.remove('show');
+        cartaBtn.innerText = '💌 Abrir Carta';
+    }
+});

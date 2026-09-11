@@ -97,9 +97,9 @@ canvas{
     font-size: 15px;
 }
 canvas.shift-up{
-    transform: translateX(-120px);
+    transform: translateY(-120px);
     transition: transform 0.6s ease;
 }
 .carta-box.show{
-    bottom: 40px;
+    bottom: 60px;
 }
